@@ -1,16 +1,13 @@
 name: Run every 24 hours
 on:
   schedule:
-    - cron: "0 0 * * *"
-
+    - cron: 0 0 * * *
 jobs:
   post:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - name: Run npm install
-        run: "npm install"
-
+        run: npm install
       - name: Run npm post
-        run: "npm post"
+        run: npm run post
