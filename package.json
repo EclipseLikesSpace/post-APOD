@@ -1,0 +1,22 @@
+{
+  "name": "tweet-apod",
+  "version": "1.0.0",
+  "description": "A twitter bot that posts the APOD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post": "node src/index.js"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Just-a-Unity-Dev (jauv)",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "snoowrap": "^1.23.0",
+    "twitter-api-v2": "^1.10.0"
+  }
+}
