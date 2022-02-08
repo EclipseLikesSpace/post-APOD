@@ -3,11 +3,6 @@ const snoowrap = require('snoowrap');
 const axios = require('axios').default;
 require('dotenv').config();
 
-/*r.getSubreddit('gifs').submitLink({
-  title: 'Mt. Cameramanjaro',
-  url: 'https://i.imgur.com/n5iOc72.gifv'
-});*/
-
 const r = new snoowrap({
     userAgent: "spunchbob",
     clientId: process.env.CLIENT_ID,
@@ -27,3 +22,5 @@ axios.get(`${process.env.apocAPI}`)
 }).catch(function (error) {
     console.log(error)
 });
+
+console.log("Posted to reddit!")
